@@ -26,6 +26,8 @@ var host = {
     html: 'index.html'
 };
 
+//fdfdf
+
 //mac chrome: "Google chrome",
 var browser = os.platform() === 'linux' ? 'Google chrome' : (
   os.platform() === 'darwin' ? 'Google chrome' : (
