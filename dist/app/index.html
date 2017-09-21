@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper" >
+      <header data-am-widget="header"
+            class="am-header am-header-default">
+
+
+        <h1 class="am-header-title">
+            <a href="#title-link" class="">XXX 个人信息提交</a>
+        </h1>
+
+
+    </header>
+    <br/>
+    <form method="get" action="http://baidu.com" class="am-form am-form-horizontal" id="doc-vld-msg">
+      <fieldset>
+        <div class="am-form-group">
+          <label for="wangdian" >请选择受理网点：</label>
+          <div>
+            <select data-am-selected="{btnWidth: '100%'}" data-am-selected placeholder="请选择受理网点" id="wangdian" required>
+              <option value="">请选择</option>
+              <option value="option1">选项一...</option>
+              <option value="option2">选项二.....</option>
+              <option value="option3">选项三........</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="am-form-group">
+          <label for="name" >姓名：</label>
+          <input type="text" id="name" minlength="4" placeholder="输入姓名（至少 4 个字符）" required/>
+        </div>
+
+        <div class="am-form-group">
+          <label for="gonghao">工号：</label>
+          <input type="text" id="gonghao" minlength="5" placeholder="输入用户名（至少 5 个字符）" required/>
+        </div>
+        <br/>
+        <button
+          type="submit"
+          class="am-btn am-btn-secondary tijiao"
+          id="doc-confirm-toggle">
+          提交
+        </button>
+        <!-- <button  class="tijiao am-btn am-btn-secondary" type="submit">提交</button> -->
+      </fieldset>
+    </form>
+
+    <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+      <div class="am-modal-dialog">
+        <div class="am-modal-hd">提交</div>
+        <div class="am-modal-bd">
+          确定提交表单吗?
+        </div>
+        <div class="am-modal-footer">
+          <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+          <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+        </div>
+      </div>
+    </div>
+
+    <footer data-am-widget="footer" class="am-footer am-footer-default">
+      <div class="am-footer-miscs ">
+          <p>由 <a href="http://mp.duduapp.net/" title="嘟嘟科技" target="_blank" class="">嘟嘟科技 </a>提供技术支持</p>
+          <p>Copyright 2013-2015 DuduApp Ltd All Rights Reserved</p>
+          <p>豫ICP备14012584号.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+</html>
